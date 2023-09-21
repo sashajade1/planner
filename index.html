@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+</head>
+<body>
+    <div class="planner">
+        <div class="header">
+            <h1>My Planner</h1>
+            <p id="currentDateTime"></p>
+        </div>
+        
+        <!-- Monday -->
+        <div class="day">
+            <h2>Monday</h2>
+            <div class="task">
+                <input type="text" id="taskInputMonday" placeholder="Enter a task">
+                <button class="button" onclick="addTask('Monday')">Add Task</button>
+                <button class="button delete-button" onclick="clearTasks('Monday')">Delete All</button>
+            </div>
+            <ul id="MondayTasks"></ul>
+            <textarea id="notesMonday" placeholder="Add notes for Monday"></textarea>
+            <button class="button" onclick="saveNotes('Monday')">Save Notes</button>
+            <button class="button delete-button" onclick="deleteNotes('Monday')">Delete Notes</button>
+            <div class="mood-tracker">
+                <label for="moodMonday">Mood:</label>
+                <select id="moodMonday" onchange="setMoodColor('Monday')">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <div id="moodColorMonday" class="mood-color"></div>
+            </div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="day">
+            <h2>Tuesday</h2>
+            <div class="task">
+                <input type="text" id="taskInputTuesday" placeholder="Enter a task">
+                <button class="button" onclick="addTask('Tuesday')">Add Task</button>
+                <button class="button delete-button" onclick="clearTasks('Tuesday')">Delete All</button>
+            </div>
+            <ul id="TuesdayTasks"></ul>
+            <textarea id="notesTuesday" placeholder="Add notes for Tuesday"></textarea>
+            <button class="button" onclick="saveNotes('Tuesday')">Save Notes</button>
+            <button class="button delete-button" onclick="deleteNotes('Tuesday')">Delete Notes</button>
+            <div class="mood-tracker">
+                <label for="moodTuesday">Mood:</label>
+                <select id="moodTuesday" onchange="setMoodColor('Tuesday')">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <div id="moodColorTuesday" class="mood-color"></div>
+            </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="day">
+            <h2>Wednesday</h2>
+            <div class="task">
+                <input type="text" id="taskInputWednesday" placeholder="Enter a task">
+                <button class="button" onclick="addTask('Wednesday')">Add Task</button>
+                <button class="button delete-button" onclick="clearTasks('Wednesday')">Delete All</button>
+            </div>
+            <ul id="WednesdayTasks"></ul>
+            <textarea id="notesWednesday" placeholder="Add notes for Wednesday"></textarea>
+            <button class="button" onclick="saveNotes('Wednesday')">Save Notes</button>
+            <button class="button delete-button" onclick="deleteNotes('Wednesday')">Delete Notes</button>
+            <div class="mood-tracker">
+                <label for="moodWednesday">Mood:</label>
+                <select id="moodWednesday" onchange="setMoodColor('Wednesday')">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <div id="moodColorWednesday" class="mood-color"></div>
+            </div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="day">
+            <h2>Thursday</h2>
+            <div class="task">
+                <input type="text" id="taskInputThursday" placeholder="Enter a task">
+                <button class="button" onclick="addTask('Thursday')">Add Task</button>
+                <button class="button delete-button" onclick="clearTasks('Thursday')">Delete All</button>
+            </div>
+            <ul id="ThursdayTasks"></ul>
+            <textarea id="notesThursday" placeholder="Add notes for Thursday"></textarea>
+            <button class="button" onclick="saveNotes('Thursday')">Save Notes</button>
+            <button class="button delete-button" onclick="deleteNotes('Thursday')">Delete Notes</button>
+            <div class="mood-tracker">
+                <label for="moodThursday">Mood:</label>
+                <select id="moodThursday" onchange="setMoodColor('Thursday')">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <div id="moodColorThursday" class="mood-color"></div>
+            </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="day">
+            <h2>Friday</h2>
+            <div class="task">
+                <input type="text" id="taskInputFriday" placeholder="Enter a task">
+                <button class="button" onclick="addTask('Friday')">Add Task</button>
+                <button class="button delete-button" onclick="clearTasks('Friday')">Delete All</button>
+            </div>
+            <ul id="FridayTasks"></ul>
+            <textarea id="notesFriday" placeholder="Add notes for Friday"></textarea>
+            <button class="button" onclick="saveNotes('Friday')">Save Notes</button>
+            <button class="button delete-button" onclick="deleteNotes('Friday')">Delete Notes</button>
+            <div class="mood-tracker">
+                <label for="moodFriday">Mood:</label>
+                <select id="moodFriday" onchange="setMoodColor('Friday')">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <div id="moodColorFriday" class="mood-color"></div>
+            </div>
+        </div>
+
+        <!-- Saturday -->
+        <div class="day">
+            <h2>Saturday</h2>
+            <div class="task">
+                <input type="text" id="taskInputSaturday" placeholder="Enter a task">
+                <button class="button" onclick="addTask('Saturday')">Add Task</button>
+                <button class="button delete-button" onclick="clearTasks('Saturday')">Delete All</button>
+            </div>
+            <ul id="SaturdayTasks"></ul>
+            <textarea id="notesSaturday" placeholder="Add notes for Saturday"></textarea>
+            <button class="button" onclick="saveNotes('Saturday')">Save Notes</button>
+            <button class="button delete-button" onclick="deleteNotes('Saturday')">Delete Notes</button>
+            <div class="mood-tracker">
+                <label for="moodSaturday">Mood:</label>
+                <select id="moodSaturday" onchange="setMoodColor('Saturday')">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <div id="moodColorSaturday" class="mood-color"></div>
+            </div>
+        </div>
+
+        <!-- Sunday -->
+        <div class="day">
+            <h2>Sunday</h2>
+            <div class="task">
+                <input type="text" id="taskInputSunday" placeholder="Enter a task">
+                <button class="button" onclick="addTask('Sunday')">Add Task</button>
+                <button class="button delete-button" onclick="clearTasks('Sunday')">Delete All</button>
+            </div>
+            <ul id="SundayTasks"></ul>
+            <textarea id="notesSunday" placeholder="Add notes for Sunday"></textarea>
+            <button class="button" onclick="saveNotes('Sunday')">Save Notes</button>
+            <button class="button delete-button" onclick="deleteNotes('Sunday')">Delete Notes</button>
+            <div class="mood-tracker">
+                <label for="moodSunday">Mood:</label>
+                <select id="moodSunday" onchange="setMoodColor('Sunday')">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <div id="moodColorSunday" class="mood-color"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body {
+    font-family: 'Bungee', cursive;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    background-image: url('Images/backgroundImg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.planner {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.day {
+    background-color: #ecf0f1;
+    padding:  10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.task {
+    margin: 5px 0;
+}
+
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* css for styling input fields */
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Adjust the button styles for "Edit" and "Delete" buttons */
+li .edit-button {
+    background-color: #2ecc71;
+}
+
+li .delete-button {
+    background-color: #e74c3c;
+}
+
+
+.mood-tracker {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mood-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Add color classes for different moods */
+.happy {
+    background-color: #2ecc71;
+}
+
+.neutral {
+    background-color: #f1c40f;
+}
+
+.sad {
+    background-color: #e74c3c;
+}
+
+
+.day h2 {
+    color: #3498db;
+}
+
+ul li {
+    color: #3498db;
+}
+
+#moodMonday, #moodTuesday, #moodWednesday, #moodThursday, #moodFriday, #moodSaturday, #moodSunday {
+color: #3498db;
+}
+
+label[for="moodMonday"],
+label[for="moodTuesday"],
+label[for="moodWednesday"],
+label[for="moodThursday"],
+label[for="moodFriday"],
+label[for="moodSaturday"],
+label[for="moodSunday"] {
+    color: #3498db;
+}
+
+p[id^="currentDate"] {
+    color: #2d73a2d7
+}
+
+
+
